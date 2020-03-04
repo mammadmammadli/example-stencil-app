@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "lib": ["ES2015", "DOM"],
+        "esModuleInterop": true,
+        "outDir": "./dist/",
+        "declaration": true,
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "resolveJsonModule": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./test/**/*"
+    ]
+}

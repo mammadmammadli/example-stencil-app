@@ -1,7 +1,7 @@
 {
   "name": "mylovely-library",
   "version": "0.0.2",
-  "description": "Stencil Component Starter",
+  "description": "Change this description",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -9,24 +9,39 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/pb-ui-library/pb-ui-library.js",
+  "unpkg": "dist/mylovely-library/mylovely-library.js",
   "files": [
     "dist/",
     "loader/"
   ],
   "scripts": {
     "build": "stencil build --docs",
-    "start": "stencil build --dev --watch --serve",
+    "start": "stencil build --dev --watch",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "build:react": "webpack --mode production --config webpack.react.config.js",
+    "build:angular": "webpack --mode production --config webpack.angular.config.js"
   },
   "devDependencies": {
-    "@stencil/core": "^1.8.8"
-  },
-  "license": "MIT",
-  "dependencies": {
+    "@babel/core": "^7.8.6",
+    "@stencil/core": "^1.8.8",
+    "@stencil/react-output-target": "0.0.3",
+    "@types/react-dom": "^16.9.5",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "write-file-webpack-plugin": "^4.5.1",
     "@stencil/angular-output-target": "0.0.2",
-    "@stencil/react-output-target": "0.0.3"
-  }
+    "@types/react": "^16.9.23",
+    "react-dom": "^16.13.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
