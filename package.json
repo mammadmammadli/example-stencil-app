@@ -1,5 +1,5 @@
 {
-  "name": "pb-ui-library",
+  "name": "mylovely-library",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "@stencil/core": "^1.8.8"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@stencil/angular-output-target": "0.0.2",
+    "@stencil/react-output-target": "0.0.3"
+  }
 }

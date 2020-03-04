@@ -10,6 +10,12 @@
 
 </head>
 <body>
-  <ui-button>ok</ui-button>
+  <ui-button>Click me!</ui-button>
+
+  <script>
+    document.getElementsByTagName('ui-button')[0].addEventListener('click', () => {
+      alert("It works!!!")
+    })
+  </script>
 </body>
 </html>
