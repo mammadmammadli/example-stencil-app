@@ -35,7 +35,7 @@
     "typescript": "^3.8.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "write-file-webpack-plugin": "^4.5.1",
     "@stencil/angular-output-target": "0.0.2",
     "@types/react": "^16.9.23",
